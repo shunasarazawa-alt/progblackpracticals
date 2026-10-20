@@ -8,9 +8,12 @@
       /* General styles */
 
       html {
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 10px;
-      }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  background-color: #fefce8; /* 目に優しいクリームイエロー */
+  color: #1f2937;
+  padding: 2rem;
+}
 
       h2 {
         font-size: 2rem;
@@ -20,12 +23,16 @@
         font-size: 1.5rem;
       }
 
-      li, p {
-        line-height: 1.5;
+      li {
+        transition: all 0.2s ease-in-out;
+      }
+
+      li:hover {
+        transform: scale(1.02);
       }
 
       /* Unordered list styles */
-
+      ol li:nth-child(odd) { background-color: rgba(0, 0, 0, 0.2); }
       ul {
         padding-left: 2rem;
         list-style-type: none;
